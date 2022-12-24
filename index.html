@@ -14,13 +14,18 @@
 
 <header class="header">
     <a class="header-logo" href=""><img src="./assets/images/logo.svg"></a>
-    <ul class="header-nav">
-        <li><a href="">Home</a></li>
-        <li><a href="">New</a></li>
-        <li><a href="">Popular</a></li>
-        <li><a href="">Trending</a></li>
-        <li><a href="">Categories</a></li>
-    </ul>
+    <button class="only-mobile-width nav-toggle"><img src="assets/images/icon-menu.svg"></button>
+    <div class="collapse header-nav">
+        <div class="only-mobile-width mobile-nav-background"></div>
+        <button class="only-mobile-width nav-close"><img src="assets/images/icon-menu-close.svg"></button>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">New</a></li>
+            <li><a href="">Popular</a></li>
+            <li><a href="">Trending</a></li>
+            <li><a href="">Categories</a></li>
+        </ul>
+    </div>
 </header>
 
 <div class="middle-box">
@@ -83,5 +88,6 @@
     </div>
 </div>
 
+<script src="scripts/navbar.js"></script>
 </body>
 </html>
